@@ -1,0 +1,10 @@
+@smoke
+@multithread
+Feature: Home Page Title
+
+@mobile
+@integration
+Scenario: Page Title Two
+    Given I open "https://www.google.com/" url
+    Then Page title should be "Google"
+    When I wait 3 seconds
